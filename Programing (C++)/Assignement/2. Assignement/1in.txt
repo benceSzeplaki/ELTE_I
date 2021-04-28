@@ -1,0 +1,17 @@
+7
+roka fogoly
+roka feketerigo
+fogoly foldigiliszta
+csiga fu
+feketerigo csiga
+foldigiliszta avar
+feketerigo gabonamag
+
+
+
+
+e[] = {roka, roka, fogoly, csiga, feketerigo, foldigiliszta, feketerigo}
+m[] = {fogoly, feketerigo, foldigiliszta, fu, csiga, avar, gabonamag}
+nov[] = {fu, avar, gabonamag}
+ln[] = {foldigiliszta, feketerigo, csiga}
+mindenevo = {feketerigo}

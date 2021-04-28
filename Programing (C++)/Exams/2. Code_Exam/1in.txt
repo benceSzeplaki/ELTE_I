@@ -1,0 +1,10 @@
+9 15
+1 47 18 Fagyizas
+1 47 19 Hegymaszas
+1 47 20 Utazas
+3 40 -74 Varosnezes
+16 39 -77 Varosnezes
+17 36 -112 Hegymaszas
+23 39 -77 Utazas
+28 28 87 Hegymaszas
+30 28 87 Teazas
