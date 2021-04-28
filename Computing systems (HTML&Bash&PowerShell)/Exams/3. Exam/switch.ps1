@@ -1,0 +1,1 @@
+﻿(Get-Content $args[0]).replace("500","otszaz").replace("50","otven").replace("5","ot") | Set-Content $args[0]
