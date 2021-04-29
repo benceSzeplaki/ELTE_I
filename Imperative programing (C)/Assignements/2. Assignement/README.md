@@ -1,6 +1,6 @@
 # 📓 Task Collatz Conjecture
 
-Create a program, that calculates the length of the Collatz conjecture from a given integer.  
+Create a program, that calculates the length of the Collatz sequence from a given integer.  
 The first element of the Collatz sequence is a natural number.  
 The rest of the elements of the sequance is defined recurively:  
 if the previous element was odd, than the next element is (the previous element * 3) + 1,  
