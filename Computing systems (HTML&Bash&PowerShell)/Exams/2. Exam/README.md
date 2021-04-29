@@ -16,3 +16,4 @@ the second (increment) is the value which increments the first number N times (n
 (eg.: begin = 2, increment = 2, n = 4 --> 2, 4, 6, 8)  
 
 4. Task:  
+Write a shell script, which switches the order of a name written in English to Hungarian from a file. (eg.: Mr David Jhones --> Jhones David Mr)  
