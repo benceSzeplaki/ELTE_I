@@ -1,66 +1,58 @@
 # 📓 Exam task (in hungarian)
 
 1. A reverse parancs megvalósítása
-Ebben a feladatban megvalósítjuk a reverse parancsot: az argumentumként kapott fájlok tartalmát sorszámozva, fordított sorrendben, 
-és a sorokat megfordítva (tükrözve) írjuk ki a standard outputra. Pl. ha a test.txt tartalma a következő:
-
-alma
-barack
-szilva
-
-…akkor a reverse parancs eredménye a következő:
-
-3 avlizs
-2 kcarab
-1 amla
-
-A megoldáshoz feltesszük, hogy bármely fájl teljes egészében elfér a memóriában.
+Ebben a feladatban megvalósítjuk a reverse parancsot: az argumentumként kapott fájlok tartalmát sorszámozva, fordított sorrendben,  
+és a sorokat megfordítva (tükrözve) írjuk ki a standard outputra. Pl. ha a test.txt tartalma a következő:  
+alma  
+barack  
+szilva  
+…akkor a reverse parancs eredménye a következő:  
+3 avlizs  
+2 kcarab  
+1 amla  
+A megoldáshoz feltesszük, hogy bármely fájl teljes egészében elfér a memóriában.  
 
 2. Alapfeladat
 Definiálj INITCAP néven egy preprocesszor szimbólumot, amely szimbólumot használjuk a fájl sorait tároló dinamikus tömb 
 (heap-en tárolt sztringek) inicializálására (ennek értéke legyen 8), és egy BUFSIZE nevű preprocesszor szimbólumot, 
-amelyet a sorok maximális hosszaként használunk. Feltehetjük, hogy egy fájl sorai egyenként nem hosszabbak 1024 karakternél.
-
+amelyet a sorok maximális hosszaként használunk. Feltehetjük, hogy egy fájl sorai egyenként nem hosszabbak 1024 karakternél.  
 Az első megoldásban a program egy fájlt lesz képes beolvasni, és annak a tartalmát fogja kiírni a fent leírt módon. 
 A fájl nevét parancssori argumentumként olvassuk be a főprogramban (main)! Ha a felhasználó nem adott meg egy argumentumot sem, 
 írjunk hibaüzenetet a standard outputra, és fejezzük be a végrehajtást. Tegyünk ugyanígy, ha van megadott argumentum, 
 de a fájlt nem tudjuk megnyitni, egyébként nyissuk meg a megadott fájlt.
 
-3. Írd meg a read nevű függvényt, amely a parancssori argumentumként kapott fájl sorainak beolvasását végzi. 
-Paraméterül kapjon egy fájlpointert (fp), egy, a heapen tárolt sztring tömböt (lines) és egy egész számra mutató pointert (lSize), 
-és a beolvasott tömböt adja vissza. A lines tömb kezdetben INITCAP méretű. Olvassuk be soronként a fájl tartalmát, és a sorokat tároljuk el a lines tömbben! 
-Ha a sorok száma eléri a tömb méretét, duplázzuk meg a tömb méretét! (Pl. ha kezdetben a tömb mérete (elemszáma) 8, növeljük 16-ra.) 
-Az lSize pointeren keresztül adjuk vissza a beolvasott sorok számát (ami nem feltétlenül egyezik meg a tömb méretével!).
+3. Írd meg a read nevű függvényt, amely a parancssori argumentumként kapott fájl sorainak beolvasását végzi.  
+Paraméterül kapjon egy fájlpointert (fp), egy, a heapen tárolt sztring tömböt (lines) és egy egész számra mutató pointert (lSize),  
+és a beolvasott tömböt adja vissza. A lines tömb kezdetben INITCAP méretű. Olvassuk be soronként a fájl tartalmát, és a sorokat tároljuk el a lines tömbben!  
+Ha a sorok száma eléri a tömb méretét, duplázzuk meg a tömb méretét! (Pl. ha kezdetben a tömb mérete (elemszáma) 8, növeljük 16-ra.)  
+Az lSize pointeren keresztül adjuk vissza a beolvasott sorok számát (ami nem feltétlenül egyezik meg a tömb méretével!).  
 
-4. Készítsd el a write függvényt, amely a beolvasott sztringeket fordított sorrendben és tükrözve kiírja a képernyőre (standard output), 
-sorszámozással együtt, ahogy a feladatsor elején létható volt. 
-Ez a függvény a korábban feltöltött sztring tömböt (lines) és a tömb elemeinek számát várja paraméterül.
+4. Készítsd el a write függvényt, amely a beolvasott sztringeket fordított sorrendben és tükrözve kiírja a képernyőre (standard output),  
+sorszámozással együtt, ahogy a feladatsor elején létható volt.  
+Ez a függvény a korábban feltöltött sztring tömböt (lines) és a tömb elemeinek számát várja paraméterül.  
 
-5. Írd meg a reverse függvényt, amely egy fájlpointert vesz át paraméterül. 
-Foglalj le a heapen egy sztring tömböt a kezdeti mérettel.
-Hozz létre egy egész típusú változót, amely a sorok számát fogja tartalmazni,
-majd végezd el a beolvasást és a kiírást a read és write függvények meghívásával!
+5. Írd meg a reverse függvényt, amely egy fájlpointert vesz át paraméterül.  
+Foglalj le a heapen egy sztring tömböt a kezdeti mérettel.  
+Hozz létre egy egész típusú változót, amely a sorok számát fogja tartalmazni,  
+majd végezd el a beolvasást és a kiírást a read és write függvények meghívásával!  
+A főprogram a fájl (sikeres) megnyitása után hívja meg a reverse függvényt a megnyitott fájl feldolgozásához!  
 
-A főprogram a fájl (sikeres) megnyitása után hívja meg a reverse függvényt a megnyitott fájl feldolgozásához!
+6. Modularizálás  
+Bontsd fordítási egységekre a programot! A függvényimplementációk kerüljenek külön fordítási egységbe, amelyhez készüljön el egy header állomány.   
+A header állományt védd header guarddal.  
 
-6. Modularizálás 
-Bontsd fordítási egységekre a programot! A függvényimplementációk kerüljenek külön fordítási egységbe, amelyhez készüljön el egy header állomány. 
-A header állományt védd header guarddal.
+7. Több fájl feldolgozása   
+Alakítsd át a programot úgy, hogy több fájl feldolgozására legyen képes.  
+Pl. ha a test.txt fájlt kétszer adjuk meg paraméterül, akkor a kimenet a következő:  
+3 avlizs  
+2 kcarab  
+1 amla  
+3 avlizs  
+2 kcarab  
+1 amla  
+Ekkor a főprogram minden parancssori argumentumra megpróbálja elvégezni a korábbi műveleteket.  
+Ha valamely paraméter feldolgozása hibát eredményez, a program jelezze a hibát, majd folytassa a végrehajtást a következő paraméterrel.  
 
-7. Több fájl feldolgozása 
-Alakítsd át a programot úgy, hogy több fájl feldolgozására legyen képes. 
-Pl. ha a test.txt fájlt kétszer adjuk meg paraméterül, akkor a kimenet a következő:
-
-3 avlizs
-2 kcarab
-1 amla
-3 avlizs
-2 kcarab
-1 amla
-
-Ekkor a főprogram minden parancssori argumentumra megpróbálja elvégezni a korábbi műveleteket. 
-Ha valamely paraméter feldolgozása hibát eredményez, a program jelezze a hibát, majd folytassa a végrehajtást a következő paraméterrel.
-
-8. Beolvasás a standard inputról
-Alakítsd át a főprogramot úgy, hogy parancssori argumentumok hiánya esetén ne fejeződjön be a végrehajtás, 
-hanem a standard inputról olvasson be sorokat a program, majd ezeket írja ki a megadott módon!
+8. Beolvasás a standard inputról  
+Alakítsd át a főprogramot úgy, hogy parancssori argumentumok hiánya esetén ne fejeződjön be a végrehajtás,  
+hanem a standard inputról olvasson be sorokat a program, majd ezeket írja ki a megadott módon!  
