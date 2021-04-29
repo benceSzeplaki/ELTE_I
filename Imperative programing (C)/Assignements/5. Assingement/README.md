@@ -8,6 +8,7 @@ A Pair tagjai:
 Az Encoded tagjai:  
  - length: pozitív egész szám, amely tartalmazza, hány elemből áll a kódolt végeredmény.  
  - arr: egy (length méretű) dinamikus tömb, amely Pair típusú pointereket tárol.  
+
   
 1. Kódolás  
 A karakterláncok kódolását az encode függvény végzi, amely kapjon egy string-et és adjon vissza egy pointer-t egy Encoded structra.   
