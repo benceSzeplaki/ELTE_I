@@ -4,6 +4,7 @@ A feladat egy egyszerű karakterlánc-kódolás implementálása. Az implementá
 A Pair tagjai:  
  - c: a kódolt karakter  
  - n: a c egymást követő előfordulásainak száma  
+  
 Az Encoded tagjai:  
  - length: pozitív egész szám, amely tartalmazza, hány elemből áll a kódolt végeredmény.  
  - arr: egy (length méretű) dinamikus tömb, amely Pair típusú pointereket tárol.  
@@ -28,7 +29,7 @@ Az előző példa esetén:
  - output: 3a2b3c -> aaabbccc  
 A program a kódolt szövegen vagy a hibaüzeneten kívül semmit ne írjon ki.  
   
-5. A program legyen több forrásfájlra bontva:  
+4. A program legyen több forrásfájlra bontva:  
  - main.c, amiben csak a main fuggveny legyen.
  - rle.h header, amiben a structok definíciója és az encode, decode függvények deklarációja legyen. A header fájl tartalmazzon header guardot!
  - rle.c fájl, ami az előbbi függvények definícióját tartalmazza.
