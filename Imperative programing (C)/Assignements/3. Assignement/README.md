@@ -21,7 +21,7 @@ Példa helyes bementre:
 
 Példák hibás bemenetre:
 
-./todo 13:58 beadando 24:00 alvas 08:30 reggeli
+./todo 13:58 beadando 24:00 alvas 08:30 reggeli  
 ./todo 13:58 beadando alvas 00:00 08:30 reggeli
 
 Előbbi esetben a második pár időpont tagja hibás, a 24:00 tesztelése után a 08:30 tesztelésével kell folytatni a végrehajtást. 
