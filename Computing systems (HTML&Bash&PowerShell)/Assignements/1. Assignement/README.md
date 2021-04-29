@@ -1,4 +1,4 @@
-# Task (in hungarian)
+# 📓 Task (in hungarian)
 Válasszon egy témát a felsoroltakból, és abból
 készítsen ismeretterjesztő céllal egy HTML dokumentumot. A dokumentum
 tartalmazzon legalább egy linket és képet.
