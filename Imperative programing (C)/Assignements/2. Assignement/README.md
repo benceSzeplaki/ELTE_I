@@ -14,4 +14,4 @@ The program expects the first element of the sequence as an input.
 The program should write to the console:  
   
 - The Collatz sequence from the input number (its elements are separated by commas)   
-- The length of the sequence on a new row  
+- The length of the sequence in a new row  
