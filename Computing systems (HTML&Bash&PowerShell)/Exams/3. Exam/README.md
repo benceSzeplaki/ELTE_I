@@ -2,7 +2,7 @@
 
 This exam consists of 4 tasks:  
 
-1. Task - Whole Division:  
+1. Task:  
 Write a shell script, that expects 3 numbers as arguments and decides wheter the first number is divisible by the difference of the second and third number or not.  
 (eg.: ./divisible.ps1 10 15 5 --> 15 - 5 = 10, 10 / 10 = 1 --> Divisible)  
 
